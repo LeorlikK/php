@@ -20,14 +20,11 @@ $data = [
     ]
 ];
 
-
-
 $res = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 $filename = './doc/testJSON.json';
 $file = fopen($filename, 'w');
 fwrite($file, $res);
 
-microtime(2);
 // READ
 $file = fopen($filename, 'r');
 $content = fread($file, filesize($filename));
