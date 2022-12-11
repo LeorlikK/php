@@ -8,6 +8,7 @@ fwrite($file, "text \nText");
 $filename = './doc/Time_Work.txt';
 $file = fopen('./doc/Time_Work.txt', 'r');
 $content = fread($file, filesize($filename));
+//while (($let = fgets($file)) !== false) $res = array_push($contentArray, trim($let)); # построчное считывание
 
 $res = file_exists($filename);
 
