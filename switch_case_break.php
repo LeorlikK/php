@@ -20,3 +20,11 @@ switch ($x) {
         break;
 
 }
+
+match ($x) {
+    5 => var_dump('5'),
+    4 => var_dump('4'),
+    3 => var_dump('3'),
+    2 => var_dump('2'),
+    1 => var_dump('1'),
+};
