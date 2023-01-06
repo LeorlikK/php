@@ -12,4 +12,6 @@ echo trim($str_1, ' %&?'); # обрезает пробелы(rtrim, ltrim)
 echo str_replace('W', 'w', $str_1) . '<br>';
 $res = explode(' ', $str_1); var_dump($res); echo '<br>';
 
+$join = join(', ', ['one', 'two', 'three']);
+
 echo $str_1 . '<br>';

@@ -2,6 +2,15 @@
 $arrayOne = array(1,2,3,4,5,6,7,8,9,10);
 $arrayOne = [1,2,3,4,5,6,7,8,9,10];
 
+function pushArray(array $array):array
+{
+    $testArray = [];
+    foreach ($array as $arr){
+        $testArray[] = $arr;
+    }
+    return $testArray;
+}
+
 $contentArray = array_filter($arrayOne, function ($stringArray) {
     return $stringArray !== 6;
 });
