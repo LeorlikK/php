@@ -101,6 +101,16 @@ echo $arraySeven === $arraySix;
 echo $arraySeven == $arraySix;
 echo $arraySeven !== $arraySix;
 
+//extract
+$one = 'Hello';
+$array = ['one' => 'rogue', 'two' => 'priest', 'three' => 'war',];
+extract($array, EXTR_PREFIX_SAME, "new");
+echo $one;
+echo $new_one;
+//compact
+$resArray = compact('one', 'new_one', 'two', 'three');
+var_dump($resArray);
+
 echo 'START';
 echo '<pre>';
 //var_dump($array);

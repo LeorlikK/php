@@ -1,5 +1,8 @@
 <?php
-$file = file_get_contents('./doc/Time_Work.txt');
+readfile('./doc/Time_Work.txt');
+
+$array = file('./doc/Time_Work.txt'); #  в массив
+$file = file_get_contents('./doc/Time_Work.txt'); #  в строку
 $file = file_put_contents('./doc/Time_Work.txt', "text \nText");
 
 $file = fopen('./doc/Time_Work.txt', 'w');

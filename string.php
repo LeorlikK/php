@@ -2,6 +2,7 @@
 $str_1 = 'Hello World';
 $str_2 = 'Привет Мир';
 $needle = 'W';
+echo ucfirst(strtolower(strtoupper($str_1))) . '<br>';
 echo mb_strlen($str_2) . '<br>';
 echo strpos($str_1, $needle) . '<br>'; # регистро зависимый
 echo stripos($str_1, $needle) . '<br>'; # регистро независимый, первое вхождение строки в строку
