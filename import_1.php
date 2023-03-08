@@ -7,5 +7,6 @@ use importTwo\Two;
 use importThree\Three;
 
 $two = new Two();
+//$two = new \importTwo\Two();
 $three = new Three();
 echo $two->sumTwo(5, 10);
