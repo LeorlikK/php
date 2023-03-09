@@ -3,5 +3,9 @@
     "psr-4": {
       "Education\\": ""
     }
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-mbstring": "*"
   }
 }
