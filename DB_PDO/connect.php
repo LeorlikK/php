@@ -43,6 +43,24 @@
 
 echo 'START';
 //$msql_connect = mysqli_connect('localhost', 'root', 'root', 'registration');
+$db_host = "89.108.115.241"; // IP-адрес вашего удаленного сервера
+$db_name = "wb_api_database"; // Имя вашей базы данных
+$db_username = "root"; // Имя пользователя базы данных
+$db_pass = "passwordWbApi"; // Пароль пользователя базы данных
+
+try {
+    $connect = new PDO("mysql:host=$db_host;dbname=$db_name;port=8111", $db_username, $db_pass);
+    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; // Опциональное сообщение об успешном подключении
+    $result = $connect->query("SELECT count()id FROM orders LIMIT 2")->fetchAll();
+    var_dump($result);
+} catch (PDOException $exception) {
+    echo "Connection failed: " . $exception->getMessage();
+    die('Error!');
+}
+die();
+echo 'START';
+//$msql_connect = mysqli_connect('localhost', 'root', 'root', 'registration');
 $db_host = "localhost";
 $db_name = "sql";
 $db_username = "root";

@@ -6,6 +6,7 @@
   },
   "require": {
     "ext-curl": "*",
-    "ext-mbstring": "*"
+    "ext-mbstring": "*",
+    "ext-sockets": "*"
   }
 }
